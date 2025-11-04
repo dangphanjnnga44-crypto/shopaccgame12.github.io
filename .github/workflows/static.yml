@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP ACC GAME 12 | Bán Acc Liên Quân Uy Tín</title>
+  <style>
+    body {font-family:'Segoe UI',sans-serif;background:#f4f6fb;margin:0;padding:0;color:#222;}
+    header {background:linear-gradient(90deg,#007bff,#00c6ff);color:white;text-align:center;padding:20px 10px;}
+    h1 {margin:0;font-size:28px;}
+    .container {max-width:900px;margin:30px auto;background:white;padding:20px;border-radius:10px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+    .section {margin-bottom:30px;}
+    .section h2 {color:#007bff;border-left:5px solid #007bff;padding-left:10px;}
+    .acc-list {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
+    .acc-item {border:1px solid #eee;border-radius:8px;padding:10px;background:#fafafa;}
+    .acc-item h3 {margin:5px 0;color:#333;}
+    .acc-item p {font-size:14px;margin:4px 0;}
+    .buy-btn {display:inline-block;background:#007bff;color:white;text-decoration:none;padding:6px 10px;
+      border-radius:5px;margin-top:5px;transition:background 0.3s;}
+    .buy-btn:hover {background:#0056cc;}
+    footer {background:#111;color:#bbb;text-align:center;padding:15px;font-size:14px;}
+    .contact {text-align:center;margin-top:20px;}
+    .contact a {background:#1877f2;color:white;text-decoration:none;padding:8px 15px;border-radius:8px;
+      display:inline-block;margin:5px;}
+    input,select{padding:8px;width:100%;margin:5px 0;border:1px solid #ccc;border-radius:5px;}
+    button{background:#007bff;color:white;border:none;padding:8px 12px;border-radius:5px;cursor:pointer;}
+    button:hover{background:#0056cc;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SHOP ACC GAME 12</h1>
+    <p>🔥 BÁN ACC LIÊN QUÂN - ACC SALE - CHỦ OFF - UY TÍN 100%</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🌟 ACC LIÊN QUÂN NỔI BẬT</h2>
+      <div class="acc-list">
+        <div class="acc-item">
+          <h3>Acc Liên Quân #001</h3>
+          <p>Rank: Cao Thủ</p>
+          <p>Skin: Nakroth, Tulen, Airi</p>
+          <p>Giá: <b>250.000 VNĐ</b></p>
+          <a class="buy-btn" href="https://m.me/mlnhaphan" target="_blank">Mua ngay</a>
+        </div>
+        <div class="acc-item">
+          <h3>Acc Liên Quân #002</h3>
+          <p>Rank: Tinh Anh</p>
+          <p>Skin: Violet, Raz</p>
+          <p>Giá: <b>150.000 VNĐ</b></p>
+          <a class="buy-btn" href="https://m.me/mlnhaphan" target="_blank">Mua ngay</a>
+        </div>
+        <div class="acc-item">
+          <h3>Acc Liên Quân #003</h3>
+          <p>Rank: Kim Cương</p>
+          <p>Skin: Airi, Zata, Rouie</p>
+          <p>Giá: <b>100.000 VNĐ</b></p>
+          <a class="buy-btn" href="https://m.me/mlnhaphan" target="_blank">Mua ngay</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>💰 HƯỚNG DẪN NẠP TIỀN</h2>
+      <p>Chuyển tiền qua 1 trong các phương thức dưới đây và gửi bằng chứng qua 
+      <b>Facebook: <a href="https://m.me/mlnhaphan" target="_blank">Mlnha Phan</a></b> để được xác nhận nhanh nhất:</p>
+      <ul>
+        <li><b>Momo:</b> 098x xxx xxx (Nguyen Van A)</li>
+        <li><b>Vietcombank:</b> 0123456789 - NGUYEN VAN A</li>
+        <li><b>ZaloPay:</b> 098x xxx xxx (Nguyen Van A)</li>
+      </ul>
+      <p><i>Sau khi chuyển, vui lòng gửi ảnh xác nhận để shop giao acc trong 5-10 phút.</i></p>
+    </div>
+
+    <div class="section">
+      <h2>💳 NẠP BẰNG THẺ CÀO</h2>
+      <form id="cardForm">
+        <label>Chọn nhà mạng:</label>
+        <select id="network">
+          <option value="Viettel">Viettel</option>
+          <option value="Mobifone">Mobifone</option>
+          <option value="Vinaphone">Vinaphone</option>
+        </select>
+        <label>Mệnh giá:</label>
+        <select id="amount">
+          <option value="10000">10.000đ</option>
+          <option value="20000">20.000đ</option>
+          <option value="50000">50.000đ</option>
+          <option value="100000">100.000đ</option>
+          <option value="200000">200.000đ</option>
+        </select>
+        <label>Số seri:</label>
+        <input type="text" id="seri" placeholder="Nhập số seri...">
+        <label>Mã thẻ:</label>
+        <input type="text" id="code" placeholder="Nhập mã thẻ...">
+        <button type="button" onclick="sendCard()">Gửi thẻ</button>
+      </form>
+    </div>
+
+    <div class="section contact">
+      <h2>📞 Liên hệ</h2>
+      <a href="https://m.me/mlnhaphan" target="_blank">Chat Facebook: Mlnha Phan</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 SHOPACCGAME12 — Bán Acc Liên Quân Giá Rẻ - Uy Tín
+  </footer>
+
+  <script>
+    function sendCard() {
+      const net = document.getElementById('network').value;
+      const amount = document.getElementById('amount').value;
+      const seri = document.getElementById('seri').value;
+      const code = document.getElementById('code').value;
+      if(!seri || !code) {
+        alert("Vui lòng nhập đầy đủ thông tin thẻ!");
+        return;
+      }
+      const msg = `NẠP THẺ CÀO\nNhà mạng: ${net}\nMệnh giá: ${amount}\nSeri: ${seri}\nMã thẻ: ${code}`;
+      const url = "https://m.me/mlnhaphan?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
+
